@@ -10,7 +10,7 @@
 
 ###
 
-<p align="left">📚 Análise e Desenvolvimento de Sistemas<br>🎯 Goals: Aprender de tudo um pouco.</p>
+<p align="left">📚 Análise e Desenvolvimento de Sistemas<br>🎯 Objetivos: Aprender de tudo um pouco.</p>
 
 ###
 
