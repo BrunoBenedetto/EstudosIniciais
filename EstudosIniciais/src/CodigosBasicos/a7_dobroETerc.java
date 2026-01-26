@@ -26,5 +26,6 @@ public class a7_dobroETerc {
         System.out.printf("O dobro de %s é %s\n", num1, dobro);
         System.out.printf("A terça parte de %s é %.5f\n", num1, terc);
 
+        sc.close();
     }
 }

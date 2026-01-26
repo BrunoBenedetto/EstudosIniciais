@@ -20,5 +20,7 @@ public class a3_nomeSalario {
         double salary  = sc.nextDouble();
 
         System.out.printf("O(a) funcionário(a) %s, tem um salário de R$%.2f em Junho", name ,salary);
+
+        sc.close();
     }
 }

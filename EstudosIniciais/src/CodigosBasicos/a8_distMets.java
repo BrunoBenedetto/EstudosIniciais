@@ -42,5 +42,6 @@ public class a8_distMets {
         System.out.print(discm + "cm\n");
         System.out.print(dismm + "mm\n");
 
+        sc.close();
     }
 }

@@ -19,5 +19,7 @@ public class a9_ConvDolar {
         dolar = real / 3.45;
 
         System.out.printf("Valor em real R$%.2f e pode comprar US$%.2f dólares", real, dolar);
+
+        sc.close();
     }
 }

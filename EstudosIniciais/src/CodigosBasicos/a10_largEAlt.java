@@ -27,5 +27,7 @@ public class a10_largEAlt {
         tinta = area / 2;
 
         System.out.printf("Serão utilizados %sL de tinta", tinta);
+
+        sc.close();
     }
 }

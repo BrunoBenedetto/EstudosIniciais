@@ -17,5 +17,6 @@ public class a2_bemVindo {
 
         System.out.printf("Olá %s, é um prazer te conhecer!", name);
 
+        sc.close();
     }
 }
