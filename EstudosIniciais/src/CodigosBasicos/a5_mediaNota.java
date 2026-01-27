@@ -26,6 +26,9 @@ public class a5_mediaNota {
 
         System.out.printf("A média entre %s e %s é igual a %s", nota1, nota2, media);
 
+<<<<<<< HEAD
         sc.close();
+=======
+>>>>>>> 36324949e8acc430275afef742b047eea1437f07
     }
 }
