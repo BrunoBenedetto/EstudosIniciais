@@ -26,9 +26,6 @@ public class a6_numAntESuc {
         System.out.printf("O antecessor de %s é %s\n", num1, ant);
         System.out.printf("O sucessor de %s é %s\n", num1, suc);
 
-<<<<<<< HEAD
         sc.close();
-=======
->>>>>>> 36324949e8acc430275afef742b047eea1437f07
     }
 }

@@ -25,9 +25,6 @@ public class a4_somaNum {
 
         System.out.printf("A soma entre %s e %d é igual a %d", num1, num2, result);
 
-<<<<<<< HEAD
         sc.close();
-=======
->>>>>>> 36324949e8acc430275afef742b047eea1437f07
     }
 }

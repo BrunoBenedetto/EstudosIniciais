@@ -42,9 +42,7 @@ public class a8_distMets {
         System.out.print(discm + "cm\n");
         System.out.print(dismm + "mm\n");
 
-<<<<<<< HEAD
+
         sc.close();
-=======
->>>>>>> 36324949e8acc430275afef742b047eea1437f07
     }
 }
