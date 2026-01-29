@@ -18,6 +18,21 @@ public class a19_MediaAlu {
         System.out.println("Informe o nome do aluno:");
         name = sc.nextLine();
 
+        System.out.println("Digite a primeira nota: ");
+        nota1 = sc.nextDouble();
+        System.out.println("Digite a segunda nota: ");
+        nota2 = sc.nextDouble();
+
+        media = (nota1 + nota2) / 2;
+
+        System.out.printf("A média do aluno foi: %.1f", media);
+
+        if (media >= 7){
+            System.out.println("\nAprovado");
+        }else{
+            System.out.println("\nReprovado");
+        }
+
         sc.close();
     }
 }
