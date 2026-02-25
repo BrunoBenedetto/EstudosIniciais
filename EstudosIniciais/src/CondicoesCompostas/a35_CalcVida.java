@@ -1,6 +1,6 @@
 package CondicoesCompostas;
 
-/*36) Um programa de vida saudável quer dar pontos atividades físicas que podem
+/*35) Um programa de vida saudável quer dar pontos para atividades físicas que podem
 ser trocados por dinheiro. O sistema funciona assim:
 
 - Cada hora de atividade física no mês vale pontos
@@ -18,21 +18,31 @@ public class a35_CalcVida {
 
         Scanner sc = new Scanner(System.in).useLocale(Locale.US);
 
-        double Horas, QntDias, Total;
-        double Point = 1;
+        double horas, qntDias, totalMes, premio;
+        double point = 0;
 
         System.out.println("Quantas horas por dia você faz atividade física?");
-        Horas = sc.nextDouble();
+        horas = sc.nextDouble();
 
         System.out.println("Quantas vezes no mês você pratica atividade física?");
-        QntDias = sc.nextDouble();
+        qntDias = sc.nextDouble();
 
-        Total = Horas * QntDias;
+        totalMes = horas * qntDias;
 
-        Point = Point * Total;
+        if (totalMes <= 10) {
+            point = totalMes * 2;
+        } else if (totalMes <= 20) {
+            point = totalMes * 5;
+        } else {
+            point = totalMes * 10;
+        }
 
-        System.out.println(Point);
+        premio = point * 0.05;
+
+        System.out.printf("O total de pontos ganhos é %.0f", point);
+        System.out.printf("\nO valor ganho foi %.2f", premio);
 
         sc.close();
     }
 }
+
