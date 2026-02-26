@@ -14,21 +14,21 @@ public class a25_NumMaior {
 
         Scanner sc = new Scanner(System.in);
 
-        int num1, num2;
+        int [] num = new int[2];
 
         System.out.println("Digite o primeiro número");
-        num1 = sc.nextInt();
+        num[0] = sc.nextInt();
         System.out.println("Digite o segundo número");
-        num2 = sc.nextInt();
+        num[1] = sc.nextInt();
 
-        if (num1 > num2){
-            System.out.printf("\nO primeiro valor %s é o maior", num1);
-        } else if (num2 > num1) {
-            System.out.printf("\nO segundo valor %s é o maior", num2);
+        if (num[0] > num[1]){
+            System.out.printf("\nO primeiro valor: %s é o maior", num[0]);
+        } else if (num[1] > num[0]) {
+            System.out.printf("\nO segundo valor: %s é o maior", num[1]);
         }else{
             System.out.println("Não existe valor maior, os dois são iguais");
-
-            sc.close();
         }
+
+        sc.close();
     }
 }

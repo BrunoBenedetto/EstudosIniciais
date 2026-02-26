@@ -13,19 +13,20 @@ public class a19_MediaAlu {
         Scanner sc = new Scanner(System.in).useLocale(Locale.US);
 
         String name;
-        double nota1, nota2, media;
+        double[] notas = new double[2];
+        double media;
 
         System.out.println("Informe o nome do aluno:");
         name = sc.nextLine();
 
         System.out.println("Digite a primeira nota: ");
-        nota1 = sc.nextDouble();
+        notas[0] = sc.nextDouble();
         System.out.println("Digite a segunda nota: ");
-        nota2 = sc.nextDouble();
+        notas[1] = sc.nextDouble();
 
-        media = (nota1 + nota2) / 2;
+        media = (notas[0] + notas[1]) / 2;
 
-        System.out.printf("A média do aluno foi: %.1f", media);
+        System.out.printf("A média do aluno: %s foi: %.1f",name, media);
 
         if (media >= 7){
             System.out.println("\nAprovado");

@@ -14,22 +14,25 @@ public class a26_MediaAluno {
 
         Scanner sc = new Scanner(System.in).useLocale(Locale.US);
 
-        double nota1, nota2, media;
+        double[] notas = new double[2];
+        double media;
 
         System.out.println("Nota 1:");
-        nota1 = sc.nextDouble();
+        notas[0] = sc.nextDouble();
         System.out.println("Nota 2:");
-        nota2 = sc.nextDouble();
+        notas[1] = sc.nextDouble();
 
-        media = (nota1+nota2) / 2;
+        media = (notas[0] + notas[1]) / 2;
         System.out.println(media);
 
-        if (media <= 4.9){
+        if (media <= 4.9) {
             System.out.println("Reprovado");
-        }else if (media >= 5 && media <= 6.9)
+        } else if (media >= 5 && media <= 6.9) {
             System.out.println("Recuperação");
-        else
+        } else {
             System.out.println("Aprovado");
+        }
+
         sc.close();
     }
 }
