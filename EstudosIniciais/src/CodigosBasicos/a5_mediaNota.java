@@ -13,19 +13,20 @@ import java.util.Locale;
 public class a5_mediaNota {
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in).useLocale(Locale.US);
+        Scanner input = new Scanner(System.in).useLocale(Locale.US);
 
-        double nota1, nota2, media;
+        double[] notas = new double[2];
+        double medias;
 
         System.out.println("Nota 1:");
-        nota1 = sc.nextDouble();
+        notas[0] = input.nextDouble();
         System.out.println("Nota 2:");
-        nota2 = sc.nextDouble();
+        notas[1] = input.nextDouble();
 
-        media = (nota1+nota2) / 2;
+        medias = (notas[0] + notas[1]) / 2;
 
-        System.out.printf("A média entre %s e %s é igual a %s", nota1, nota2, media);
+        System.out.printf("A média entre %s e %s é igual a %s", notas[0], notas[1], medias);
 
-        sc.close();
+        input.close();
     }
 }
