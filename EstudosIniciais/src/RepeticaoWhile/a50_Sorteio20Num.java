@@ -31,7 +31,7 @@ public class a50_Sorteio20Num {
             if (num > 5) {
                 num5++;
 
-                //c) Quantos números são divisíveis por 3
+            //c) Quantos números são divisíveis por 3
             }
             if (num % 3 == 0 && num != 0) {
                 div3++;
