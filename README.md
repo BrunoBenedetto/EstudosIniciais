@@ -1,12 +1,5 @@
 # ☕ Minha Jornada com Java
 
-<div align="center">
-
-![Java](https://img.shields.io/badge/Java-Learning-orange?style=for-the-badge&logo=openjdk)
-![Status](https://img.shields.io/badge/Status-Em%20Aprendizado-blue?style=for-the-badge)
-
-</div>
-
 ---
 
 # 📚 Sobre o Repositório
