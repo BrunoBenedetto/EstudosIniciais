@@ -35,17 +35,15 @@ class a59_GenderIdade {
             age = sc.nextInt();
 
             if (gender.equalsIgnoreCase("f")) {
-                contWom++; // 1
+                contWom++;
                 if (age < ageWom) {
                     ageWom = age;
                 }
-                if (contWom == 0) {
-                    ageWom = 0;
-                }
+            }
 
-                if (age > ageUp) {
-                    ageUp = age;
-                }
+
+            if (age > ageUp) {
+                ageUp = age;
             }
 
             if (gender.equalsIgnoreCase("M")) {
@@ -60,11 +58,15 @@ class a59_GenderIdade {
                  continuE = false;
                 }
 
-
         }
-        System.out.printf("a) qual é a maior idade lida: %s\n", ageUp);
-        System.out.printf("b) quantos homens foram cadastrados: %s\n", contMen);
-        System.out.printf("c) qual é a idade da mulher mais jovem: %s\n", ageWom);
+
+        if(contWom == 0){
+            ageWom = 0;
+        }
+
+        System.out.printf("a) qual é a maior idade lida: %d\n", ageUp);
+        System.out.printf("b) quantos homens foram cadastrados: %d\n", contMen);
+        System.out.printf("c) qual é a idade da mulher mais jovem: %d\n", ageWom);
         System.out.printf("d) qual é a média de idade entre os homens: %.2f\n", mediaMen);
 
         sc.close();
