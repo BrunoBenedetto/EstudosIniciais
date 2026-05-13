@@ -25,6 +25,7 @@ class a59_GenderIdade {
         double ageMen = 0;
         int ageUp = 0;
         int ageWom = 9999;
+        int contWom = 0;
 
         while (continuE) {
             System.out.println("Informe seu gênero M/F: ");
@@ -33,31 +34,34 @@ class a59_GenderIdade {
             System.out.println("Agora informe sua idade");
             age = sc.nextInt();
 
-            if(gender.equalsIgnoreCase("f")){
-                if (age < ageWom){
+            if (gender.equalsIgnoreCase("f")) {
+                contWom++; // 1
+                if (age < ageWom) {
                     ageWom = age;
+                }
+                if (contWom == 0) {
+                    ageWom = 0;
+                }
+
+                if (age > ageUp) {
+                    ageUp = age;
                 }
             }
 
-            if (age > ageUp){
-                ageUp = age;
-            }
-
-            if (gender.equalsIgnoreCase("M")){
+            if (gender.equalsIgnoreCase("M")) {
                 contMen++;
                 ageMen += age;
                 mediaMen = ageMen / contMen;
-
             }
 
             System.out.println("Deseja continuar? S/N");
-            awnser = sc.next();
-            if (awnser.equalsIgnoreCase("n") || awnser.equalsIgnoreCase("nao")){
-                continuE = false;
-            }
+             awnser = sc.next();
+             if (awnser.equalsIgnoreCase("n") || awnser.equalsIgnoreCase("nao")) {
+                 continuE = false;
+                }
+
 
         }
-
         System.out.printf("a) qual é a maior idade lida: %s\n", ageUp);
         System.out.printf("b) quantos homens foram cadastrados: %s\n", contMen);
         System.out.printf("c) qual é a idade da mulher mais jovem: %s\n", ageWom);
